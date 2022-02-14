@@ -1,48 +1,48 @@
 import { readFile } from 'fs';
 
 //part1
-readFile('input.txt', 'utf8', (data) => {
+// readFile('input.txt', 'utf8', (data) => {
 
-    const content = data.split("\n");
+//     const content = data.split("\n");
 
-    let inc = 0;
-    let bef = -1;
+//     let inc = 0;
+//     let bef = -1;
     
-    content.forEach(line => {
+//     content.forEach(line => {
         
-        if(parseInt(line) > bef && bef != -1){inc++;}
-        bef = parseInt(line);
+//         if(parseInt(line) > bef && bef != -1){inc++;}
+//         bef = parseInt(line);
         
-    });
+//     });
 
-    console.log(inc);
-})
+//     console.log(inc);
+// })
 
 /* ################################################### */
 
 //part2
-readFile('input.txt', 'utf8', (data) => {
+// readFile('input.txt', 'utf8', (data) => {
 
-    const content = data.split("\n");
+//     const content = data.split("\n");
 
-    let inc = 0;
-    let bef = -1;
+//     let inc = 0;
+//     let bef = -1;
 
-    content.forEach((line, i) => {
-        if (i < content.length-2) {
-            let sum = content.slice(i, i+3).reduce((x, y) => x + y);
-        }
+//     content.forEach((line, i) => {
+//         if (i < content.length-2) {
+//             let sum = content.slice(i, i+3).reduce((x, y) => x + y);
+//         }
 
-        if(sum > bef && bef != -1){
-            inc++;
-        }
+//         if(sum > bef && bef != -1){
+//             inc++;
+//         }
 
-        bef = sum;
+//         bef = sum;
 
-    })
+//     })
 
-    console.log(inc);
-})
+//     console.log(inc);
+// })
 
 // geradot de passwords
 // const generateP = ()=> {
@@ -50,7 +50,7 @@ readFile('input.txt', 'utf8', (data) => {
 //     var str = 'ABMNOPQRSTUVWXYZ' + 
 //             'apqrstuvwxyz0789|!#$%&bcdefghijklmno/()CDEFGHIJKL={[]123456}?-_*+<>';
 
-//     for (let i = 0; i <= 7; i++) {
+//     for (let i = 0; i <= 13; i++) {
 //         var char = Math.floor(Math.random()
 //                     * str.length + 1);
 
